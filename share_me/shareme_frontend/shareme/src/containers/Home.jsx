@@ -61,15 +61,12 @@ export const Home = () => {
             <Sidebar closeToggle={setToggleSidebar} user={user && user} />
           </div>
         )}
-        <div className="pb-2 flex-1 h-screen overflow-y-auto" ref={scrollRef}>
-          <Routes>
-            <Route
-              path="/user-profile/:userId"
-              element={<UserProfile />}
-            ></Route>
-            <Route path="/*" element={<Pins user={user && user} />}></Route>
-          </Routes>
-        </div>
+      </div>
+      <div className="pb-2 flex-1 h-screen overflow-y-auto" ref={scrollRef}>
+        <Routes>
+          <Route path="/user-profile/:userId" element={<UserProfile />}></Route>
+          <Route path="/*" element={<Pins user={user && user} />}></Route>
+        </Routes>
       </div>
     </div>
   );
