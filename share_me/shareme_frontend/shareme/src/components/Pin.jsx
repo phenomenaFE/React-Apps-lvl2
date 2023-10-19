@@ -2,7 +2,6 @@ import React from "react";
 import { urlFor } from "../client";
 
 export const Pin = ({ pin }) => {
-  debugger;
   const { postedBy, image, _id, destination } = pin;
   return (
     <div>
