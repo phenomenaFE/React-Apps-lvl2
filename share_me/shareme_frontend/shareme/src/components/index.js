@@ -6,5 +6,4 @@ export { PinDetail } from './PinDetail'
 export { CreatePin } from './CreatePin'
 export { Search } from './Search'
 export { MasonryLayout } from './MasonryLayout'
-export { Pin } from './Pin'
 
